@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button role="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Chorizo</a>
+          </div>
+      
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-lock"></span> Salir</a></li>
+            </ul>
+          </div>
+      
+        </div>
+      </nav>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <p class="pad-top-15 text-muted"></p>
+            <div class="panel-group">
+              <!---->
+              <div class="panel panel-default">
+                <div class="panel-heading">Inventario</div>
+                <div class="panel-body list-group">
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-pencil"></span> Agregar producto</a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-book"></span> Historial de stock</a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span> Reportes</a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-picture"></span> imagenes de inventario</a>
+                </div>
+              </div>
+              <!---->
+      
+      
+              <!---->
+      
+              <!---->
+              <div class="panel panel-default">
+                <div class="panel-heading">Usuarios</div>
+                <div class="panel-body list-group">
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-user"></span>Listar usuarios</a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-list"></span> Crear usuarios</a>
+                </div>
+              </div>
+              <!---->
+              <!---->
+              <div class="panel panel-default">
+                <div class="panel-heading">Configuracion</div>
+                <div class="panel-body list-group">
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-cog"></span> Cambiar contraseña</a>
+                </div>
+              </div>
+              <!---->
+      
+            </div>
+          </div>
+          <div class="col-md-9 pad-top-10">
+            <div class="alert alert-info">
+              <p>Instrucciones:<br>Crear un producto con un stock (cantidad de elementos fisicos existentes en bodega) inicial</p>
+            </div>
+      
+            <ul class="breadcrumb">
+              <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> El dia hoy es </a> 27-02-2018</li>
+            </ul>
+      
+            <!--Popular-->
+            <div class="panel panel-default">
+              <div class="panel-heading">Registro hoy</div>
+              <div class="panel-content">
+      
+                <table id="dtable" class="table">
+                  <thead>
+                    <tr>
+                      <td>
+      id     
+                      </td>                <td>
+      nombre    
+                      </td>       <td>
+      precio     
+                      </td>       <td>
+      stock
+                      </td>       <td>
+      acciones
+                      </td>
+                      
+                    </tr>
+                    
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td><span class="label label-info">1</span></td><td> <a >Salchicha Ranch</a>
+                    </td>
+                    <td>32434</td>
+                    <td>5              <td><button class="btn-success">Editar</button></td>
+      </td>
+                  </tr>
+       
+                <tr></tr>
+                  </tbody>
+                </table>
+      
+              </div>
+            </div>
+            <!--End Popular-->
+      
+      
+          </div>
+        </div>
+      </div>
+</body>
+</html>
